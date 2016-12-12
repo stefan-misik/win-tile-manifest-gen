@@ -54,6 +54,8 @@ int main(
             WIN_TILE_FLAGS_SHOW_NAME : 0;
     tile.flags |= ask_yn_question("Dark text on a tile? (y/n) ") ? 
             WIN_TILE_FLAGS_FOREGROUND_DARK : 0;
+    tile.logo150 = NULL;
+    tile.logo70 = NULL;
     
     /* Generate manifest file */
     generate_win_tile_manifest(file_name, &tile);
